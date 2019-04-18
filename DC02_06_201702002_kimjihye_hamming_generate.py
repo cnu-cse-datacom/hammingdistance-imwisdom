@@ -11,7 +11,7 @@ def generate_random_ascii():
             make_ascii = list()
             make_hex = list()
             for j in range(0, 4):
-                num = random.randint(97.122_
+                num = random.randint(97,122)
                 make_str.append(str(chr(num)))
             string = ''.join(make_str)
             binary = bin(int.from_bytes(string.encode(), 'big'))
