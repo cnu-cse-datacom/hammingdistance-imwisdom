@@ -13,10 +13,10 @@ for i in list(range(i, 99)):
     j=i+1
     for j in list(range(j, 100)):
         hd = hamming(df.iloc[i, 1], df.iloc[j,1])
+        count = count+1
         print(count, "(", df.iloc[i,0], df.iloc[j,0],") hamming_distance: ", hd)
         if min_ham>hd:
             min_ham=hd
-        count = count+1
 
 print("min hamming distance", min_ham)
 
